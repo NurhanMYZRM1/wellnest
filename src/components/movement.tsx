@@ -89,7 +89,6 @@ export function MovementPage({
   return (
     <>
       <PageHeading
-        eyebrow="A BODY IN BALANCE"
         title="Move a little. Feel better."
         description="Make space for movement in the middle of your day."
       />

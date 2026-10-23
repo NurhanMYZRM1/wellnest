@@ -118,7 +118,6 @@ export function SleepPage({
   return (
     <>
       <PageHeading
-        eyebrow="REST WELL, LIVE WELL"
         title="Find your sleep rhythm."
         description="A little reflection tonight. A more rested tomorrow."
       >

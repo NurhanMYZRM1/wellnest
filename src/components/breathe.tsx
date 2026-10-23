@@ -73,7 +73,6 @@ export function BreathePage({
   return (
     <>
       <PageHeading
-        eyebrow="COME BACK TO YOURSELF"
         title="Nothing to do. Just breathe."
         description="Let your shoulders soften. Let this moment be yours."
       />
@@ -189,10 +188,6 @@ export function BreathePage({
           Breathe comfortably. You can pause or stop whenever you need.
         </p>
         <div className="studio-bottom">
-          <span>
-            <span className="tiny-dot mint-dot" />
-            Your quiet corner of the day
-          </span>
           <span>Completed sessions are saved automatically</span>
         </div>
       </section>

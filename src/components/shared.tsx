@@ -225,12 +225,10 @@ export function Sheet({
   );
 }
 export function PageHeading({
-  eyebrow,
   title,
   description,
   children,
 }: {
-  eyebrow: string;
   title: string;
   description: string;
   children?: React.ReactNode;
@@ -238,7 +236,6 @@ export function PageHeading({
   return (
     <div className="page-heading">
       <div>
-        <span className="eyebrow">{eyebrow}</span>
         <h1>{title}</h1>
         <p>{description}</p>
       </div>
@@ -249,7 +246,6 @@ export function PageHeading({
 export function Empty({ title, text }: { title: string; text: string }) {
   return (
     <div className="empty">
-      <span className="empty-mark">✧</span>
       <h3>{title}</h3>
       <p>{text}</p>
     </div>

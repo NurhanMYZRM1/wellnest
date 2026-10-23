@@ -153,7 +153,6 @@ export function RemindersPage(props: SharedProps) {
   return (
     <>
       <PageHeading
-        eyebrow="CONSISTENCY, MADE SIMPLE"
         title="One less thing to remember."
         description="A gentle nudge for the little things that matter."
       >

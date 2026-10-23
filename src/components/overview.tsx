@@ -116,10 +116,6 @@ export function Overview(
           </h1>
           <p>A fresh moment to check in with yourself.</p>
         </div>
-        <div className="today-pill">
-          <span />
-          Your wellbeing, today
-        </div>
       </div>
       <section className="panel quick-start">
         <SectionTitle title={due.length ? `Due now · ${due.length}` : "Due now"}>
@@ -218,16 +214,7 @@ export function Overview(
           <div className="leaf-shape leaf-three" />
           <div className="leaf-shape leaf-four" />
           <div className="plant-stem" />
-          <div className="art-label">
-            <span>
-              <Leaf size={15} />
-            </span>
-            Grow at your own pace.
-          </div>
-          <span className="art-spark spark-one">✧</span>
-          <span className="art-spark spark-two">✦</span>
         </div>
-        <span className="hero-number">01 — YOUR DAILY RESET</span>
       </section>
       <div className="section-title snapshot-heading">
         <h2>Your daily snapshot</h2>

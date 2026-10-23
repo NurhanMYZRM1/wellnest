@@ -185,7 +185,6 @@ export function NutritionPage({ data, setData, now, notify }: SharedProps) {
   return (
     <>
       <PageHeading
-        eyebrow="A CLOSER LOOK AT EVERYDAY FOOD"
         title="Know what nourishes you."
         description="Scan a barcode and get to know what’s inside."
       />

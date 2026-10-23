@@ -17,11 +17,11 @@ test("demo persists and stays separate from personal data", async ({
 }) => {
   await demo(page);
   await expect(
-    page.getByText("Sample records. Real possibilities."),
+    page.getByRole("button", { name: "Use my own data" }),
   ).toBeVisible();
   await page.reload();
   await expect(
-    page.getByText("Sample records. Real possibilities."),
+    page.getByRole("button", { name: "Use my own data" }),
   ).toBeVisible();
   await page.getByRole("button", { name: "Use my own data" }).click();
   await expect(page.getByText("no records yet")).toBeVisible();

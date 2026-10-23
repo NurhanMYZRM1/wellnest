@@ -279,25 +279,10 @@ export default function WellnessApp() {
           ))}
         </nav>
         <div className="sidebar-bottom">
-          <div className="sidebar-note">
-            <span className="note-flower">
-              <Flower2 size={29} strokeWidth={1.3} />
-            </span>
-            <h3>
-              Small steps.
-              <br />A healthier you.
-            </h3>
-            <p>
-              A little care, every day,
-              <br />
-              goes a long way.
-            </p>
-          </div>
           <div className="private-note">
             <ShieldCheck size={15} />
             Your space. Your data.
           </div>
-          <span className="version-label">WELLNEST · HACKATHON EDITION</span>
         </div>
       </aside>
       <div className="main-shell">
@@ -381,7 +366,6 @@ export default function WellnessApp() {
               <span>
                 <Sparkles size={14} />
                 <strong>Demo space</strong>
-                <span>Sample records. Real possibilities.</span>
               </span>
               <button onClick={() => chooseMode("personal")}>
                 Use my own data
@@ -500,14 +484,6 @@ export default function WellnessApp() {
               {page === "nutrition" && <NutritionPage {...props} />}
             </>
           )}
-          <footer className="page-footer">
-            <span>
-              <Leaf size={13} />A little better, every day.
-            </span>
-            <span>
-              Made for your wellbeing <Heart size={12} />
-            </span>
-          </footer>
         </main>
         {/* Sections only exist after Start fresh / Explore demo; tabs on the welcome screen did nothing. */}
         {onboarded && (
