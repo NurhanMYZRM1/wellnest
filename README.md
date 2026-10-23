@@ -1,6 +1,9 @@
 # Wellnest
 
-A mobile-first personal wellness prototype for a hackathon. Built with Next.js App Router, React, TypeScript, Tailwind CSS, and local browser storage. No sign-in, API keys, or database setup is needed.
+A mobile-first personal wellness prototype for a hackathon.
+
+**Live demo:** https://wellnest-azure.vercel.app (open on a phone, then tap **Explore demo**)
+ Built with Next.js App Router, React, TypeScript, Tailwind CSS, and local browser storage. No sign-in, API keys, or database setup is needed.
 
 ## Run locally
 
@@ -21,7 +24,7 @@ Open [localhost:3000](http://localhost:3000). Choose **Start fresh** for your ow
 4. Deploy, then open the generated HTTPS link. HTTPS is required for camera access except on localhost.
 5. Test scanning on the actual phone/browser you plan to use for your presentation. If camera access is denied or a product is absent from the database, manual barcode entry and the labeled sample product remain available.
 
-Do not configure this as a static export: the product lookup route needs the Next.js server runtime. Deployment has not been performed by this project.
+Do not configure this as a static export: the product lookup route needs the Next.js server runtime. This repository is deployed on Vercel at https://wellnest-azure.vercel.app; every push to `main` redeploys it.
 
 ## Two-minute demo walkthrough
 
