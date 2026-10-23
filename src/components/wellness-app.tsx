@@ -40,12 +40,27 @@ import { NutritionPage } from "./nutrition";
 
 // `tab` is the single-word label for the phone tab bar (HIG tab bars: "Use single words").
 const navigation = [
-  { page: "overview" as Page, label: "Overview", tab: "Today", icon: LayoutGrid },
+  {
+    page: "overview" as Page,
+    label: "Overview",
+    tab: "Today",
+    icon: LayoutGrid,
+  },
   { page: "sleep" as Page, label: "Sleep", tab: "Sleep", icon: Moon },
   { page: "movement" as Page, label: "Movement", tab: "Move", icon: Activity },
   { page: "breathe" as Page, label: "Breathe", tab: "Breathe", icon: Flower2 },
-  { page: "reminders" as Page, label: "Reminders", tab: "Reminders", icon: Bell },
-  { page: "nutrition" as Page, label: "Nutrition", tab: "Food", icon: ScanLine },
+  {
+    page: "reminders" as Page,
+    label: "Reminders",
+    tab: "Reminders",
+    icon: Bell,
+  },
+  {
+    page: "nutrition" as Page,
+    label: "Nutrition",
+    tab: "Food",
+    icon: ScanLine,
+  },
 ];
 const storageKey = (mode: Mode) => `wellnest:v1:${mode}`;
 const pageFromUrl = (): Page =>
@@ -188,11 +203,17 @@ export default function WellnessApp() {
     setLogSleep(logSleepNow);
     setPage(next);
     if (next !== page)
-      window.history.pushState(null, "", next === "overview" ? "/" : `/${next}`);
+      window.history.pushState(
+        null,
+        "",
+        next === "overview" ? "/" : `/${next}`,
+      );
     setMenu(false);
     setProfileOpen(false);
     window.scrollTo({ top: 0, behavior: "instant" });
-    requestAnimationFrame(() => heading.current?.focus({ preventScroll: true }));
+    requestAnimationFrame(() =>
+      heading.current?.focus({ preventScroll: true }),
+    );
   };
   const dueCount = data.occurrences.filter((o) => isDue(o, now)).length;
   const breakDue =
@@ -488,30 +509,35 @@ export default function WellnessApp() {
             </span>
           </footer>
         </main>
-        <nav className="mobile-nav" aria-label="Quick navigation">
-          {navigation.map(({ page: p, tab, icon: Icon }) => (
-            <button
-              key={p}
-              className={page === p ? "active" : ""}
-              onClick={() => navigate(p)}
-              aria-current={page === p ? "page" : undefined}
-              aria-describedby={
-                p === "reminders" && dueCount > 0 ? "tab-due-count" : undefined
-              }
-            >
-              <Icon size={20} />
-              <span>{tab}</span>
-              {p === "reminders" && dueCount > 0 && (
-                <span className="tab-badge" aria-hidden="true">
-                  {dueCount}
-                </span>
-              )}
-            </button>
-          ))}
-          <span id="tab-due-count" hidden>
-            {dueCount} due now
-          </span>
-        </nav>
+        {/* Sections only exist after Start fresh / Explore demo; tabs on the welcome screen did nothing. */}
+        {onboarded && (
+          <nav className="mobile-nav" aria-label="Quick navigation">
+            {navigation.map(({ page: p, tab, icon: Icon }) => (
+              <button
+                key={p}
+                className={page === p ? "active" : ""}
+                onClick={() => navigate(p)}
+                aria-current={page === p ? "page" : undefined}
+                aria-describedby={
+                  p === "reminders" && dueCount > 0
+                    ? "tab-due-count"
+                    : undefined
+                }
+              >
+                <Icon size={20} />
+                <span>{tab}</span>
+                {p === "reminders" && dueCount > 0 && (
+                  <span className="tab-badge" aria-hidden="true">
+                    {dueCount}
+                  </span>
+                )}
+              </button>
+            ))}
+            <span id="tab-due-count" hidden>
+              {dueCount} due now
+            </span>
+          </nav>
+        )}
       </div>
       <div
         className={`toast ${toast ? "visible" : ""}`}
