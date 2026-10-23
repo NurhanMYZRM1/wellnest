@@ -6,7 +6,6 @@ import {
   Moon,
   Pencil,
   Plus,
-  Sparkles,
   Sun,
   Trash2,
 } from "lucide-react";
@@ -214,10 +213,6 @@ export function SleepPage({
           </p>
         </section>
         <section className="suggestion-panel">
-          <span className="eyebrow">
-            <Sparkles size={14} />
-            YOUR EVENING, REIMAGINED
-          </span>
           <h2>
             A bedtime to
             <br />

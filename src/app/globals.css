@@ -186,12 +186,6 @@ svg {
   color: var(--green);
   transform: rotate(-15deg);
 }
-.sidebar-caption {
-  font-size: var(--fs-caption1);
-  letter-spacing: 1.8px;
-  color: light-dark(#879189, #838d85);
-  margin: 49px 14px 15px;
-}
 .sidebar nav {
   display: grid;
   gap: 7px;
@@ -403,150 +397,6 @@ main {
   color: var(--muted);
   font-size: var(--fs-subheadline);
   margin-top: 9px;
-}
-.hero-banner {
-  position: relative;
-  overflow: hidden;
-  min-height: 272px;
-  background: light-dark(#edf2e5, #191c14);
-  border: 1px solid light-dark(#e6ecdc, #4a4f44);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  padding: 33px 35px;
-  margin-bottom: 28px;
-}
-.hero-copy {
-  position: relative;
-  z-index: 2;
-}
-.hero-eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-size: var(--fs-caption2);
-  letter-spacing: 1.8px;
-  color: light-dark(#6e8063, #86967d);
-  margin-bottom: 16px;
-}
-.hero-copy h2 {
-  font-family: var(--serif);
-  font-size: var(--fs-display);
-  line-height: 1.07;
-  letter-spacing: -1.2px;
-  color: light-dark(#31503d, #99b6a3);
-}
-.hero-copy h2 em {
-  font-weight: 400;
-  color: light-dark(#5c7750, #879f7c);
-}
-.hero-copy p {
-  font-size: var(--fs-footnote);
-  color: light-dark(#7b8770, #848e7b);
-  margin-top: 12px;
-  line-height: 1.65;
-}
-.hero-button {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  border-radius: 5px;
-  background: light-dark(#315f48, #89b19b);
-  color: light-dark(white, #0f1a15);
-  padding: 11px 14px;
-  font-size: var(--fs-caption1);
-  margin-top: 20px;
-}
-.hero-button:hover {
-  background: light-dark(#214c37, #96bca7);
-  transform: translateY(-1px);
-}
-.hero-art {
-  position: absolute;
-  width: 380px;
-  height: 300px;
-  right: 55px;
-  top: -6px;
-}
-.art-ring {
-  position: absolute;
-  border: 1px solid light-dark(#d9e1c9, #4a503e);
-  border-radius: 50%;
-  width: 260px;
-  height: 260px;
-  left: 60px;
-  top: 22px;
-}
-.ring-two {
-  width: 330px;
-  height: 330px;
-  left: 25px;
-  top: -12px;
-  border-color: light-dark(#dfe6d1, #4b4f41);
-}
-.art-sun {
-  position: absolute;
-  left: 117px;
-  top: 51px;
-  width: 164px;
-  height: 164px;
-  border-radius: 50%;
-  background: linear-gradient(130deg, light-dark(#e0e7bc, #242708), light-dark(#d7dfad, #2b2f09));
-}
-.leaf-shape {
-  position: absolute;
-  width: 92px;
-  height: 142px;
-  border-radius: 100% 0 100% 0;
-  box-shadow: inset -1px 0 0 #ffffff12;
-}
-.leaf-shape:after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 90%;
-  background: light-dark(#ffffff22, #0f0f0f22);
-  top: 8%;
-  left: 49%;
-  transform: rotate(30deg);
-}
-.leaf-one {
-  background: linear-gradient(125deg, light-dark(#a4b98c, #455432), light-dark(#6b8d65, #688463));
-  left: 115px;
-  top: 110px;
-  transform: rotate(-78deg);
-}
-.leaf-two {
-  background: linear-gradient(35deg, light-dark(#416e52, #81a88e), light-dark(#6f936b, #617f5e));
-  left: 201px;
-  top: 98px;
-  transform: rotate(7deg);
-}
-.leaf-three {
-  background: linear-gradient(125deg, light-dark(#bdc9a8, #39412a), light-dark(#829f70, #5a714b));
-  left: 99px;
-  top: 38px;
-  transform: rotate(-55deg);
-  width: 75px;
-  height: 113px;
-}
-.leaf-four {
-  background: linear-gradient(70deg, light-dark(#527859, #80a185), light-dark(#94ab7a, #51633c));
-  left: 180px;
-  top: 13px;
-  transform: rotate(-1deg);
-  width: 70px;
-  height: 126px;
-}
-.plant-stem {
-  position: absolute;
-  width: 3px;
-  height: 210px;
-  left: 187px;
-  top: 64px;
-  background: light-dark(#52734e, #86a382);
-  transform: rotate(-6deg);
-  border-radius: 100%;
 }
 .section-title {
   display: flex;
@@ -2574,8 +2424,6 @@ input[type="datetime-local"] {
 .suggestion-schedule {
   color: light-dark(#6b5f7a, #a196af);
 }
-.hero-copy p,
-.hero-eyebrow,
 .demo-banner,
 .date-eyebrow,
 .eyebrow,
@@ -2613,18 +2461,7 @@ input[type="datetime-local"] {
   main {
     padding: 38px 55px 0;
   }
-  .hero-banner {
-    min-height: 310px;
-  }
-  .hero-copy h2 {
-    font-size: var(--fs-display);
-  }
-  .hero-art {
-    right: 100px;
-    transform: scale(1.1);
-    top: 10px;
-  }
-  .stat-card {
+        .stat-card {
     padding: 22px;
   }
   .stat-top {
@@ -2639,13 +2476,7 @@ input[type="datetime-local"] {
   .stat-bottom {
     font-size: var(--fs-caption1);
   }
-  .hero-copy p {
-    font-size: var(--fs-subheadline);
-  }
-  .hero-button {
-    font-size: var(--fs-footnote);
-  }
-  .overview-heading h1 {
+      .overview-heading h1 {
     font-size: var(--fs-display);
   }
   .panel {
@@ -2677,14 +2508,7 @@ input[type="datetime-local"] {
   .topbar {
     padding: 0 28px;
   }
-  .hero-art {
-    right: 12px;
-    transform: scale(0.9);
-  }
-  .hero-copy h2 {
-    font-size: var(--fs-large);
-  }
-  .stat-grid {
+      .stat-grid {
     gap: 10px;
   }
   .stat-card {
@@ -2763,12 +2587,7 @@ input[type="datetime-local"] {
     font-size: var(--fs-title2);
     gap: 6px;
   }
-  .sidebar-caption {
-    font-size: var(--fs-caption2);
-    letter-spacing: 1.2px;
-    margin-left: 12px;
-  }
-  .topbar {
+    .topbar {
     padding: 0 23px;
     height: 70px;
   }
@@ -2781,18 +2600,7 @@ input[type="datetime-local"] {
   main {
     padding: 24px 23px 0;
   }
-  .hero-art {
-    right: -60px;
-    opacity: 0.8;
-    transform: scale(0.8);
-  }
-  .hero-copy {
-    max-width: 65%;
-  }
-  .hero-copy h2 {
-    font-size: var(--fs-large);
-  }
-  .stat-grid {
+        .stat-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 13px;
   }
@@ -3041,33 +2849,7 @@ input[type="datetime-local"] {
   .date-eyebrow {
     font-size: var(--fs-caption1);
   }
-    .hero-banner {
-    padding: 29px;
-    min-height: 275px;
-  }
-  .hero-art {
-    right: 0;
-    top: 0;
-    transform: scale(0.85);
-  }
-  .hero-copy {
-    max-width: 60%;
-  }
-  .hero-copy h2 {
-    font-size: var(--fs-large);
-  }
-  .hero-copy p {
-    font-size: var(--fs-caption1);
-  }
-  .hero-button {
-    font-size: var(--fs-caption1);
-    gap: 10px;
-  }
-  .hero-eyebrow {
-    font-size: var(--fs-caption2);
-    letter-spacing: 1.2px;
-  }
-  .stat-grid {
+                  .stat-grid {
     gap: 12px;
   }
   .stat-card {
@@ -3256,37 +3038,7 @@ input[type="datetime-local"] {
     main {
     padding: 22px 17px 80px;
   }
-  .hero-banner {
-    min-height: 265px;
-    padding: 25px 23px;
-  }
-  .hero-copy {
-    max-width: 78%;
-  }
-  .hero-copy h2 {
-    font-size: var(--fs-large);
-  }
-  .hero-copy p {
-    max-width: 190px;
-    font-size: var(--fs-caption1);
-  }
-  .hero-art {
-    right: -137px;
-    top: 23px;
-    transform: scale(0.72);
-    opacity: 0.7;
-  }
-  .hero-copy .hero-eyebrow {
-    font-size: var(--fs-caption2);
-    letter-spacing: 1px;
-  }
-  .hero-button {
-    position: relative;
-    z-index: 3;
-    font-size: var(--fs-caption1);
-    gap: 8px;
-  }
-      .section-title h2 {
+                    .section-title h2 {
     font-size: var(--fs-body);
   }
   .snapshot-heading .subtle-label {
@@ -3677,8 +3429,7 @@ input[type="datetime-local"] {
   .breathing-orb {
     transform: scale(0.9) !important;
   }
-  .stat-card:hover,
-  .hero-button:hover {
+  .stat-card:hover {
     transform: none;
   }
   .toast {
@@ -3693,7 +3444,6 @@ input[type="datetime-local"] {
 a {
   text-decoration: underline;
 }
-.sidebar-caption,
 .private-note,
 .breadcrumb,
 .big-metric > span,
@@ -3761,7 +3511,6 @@ a {
 .section-description,
 .page-heading p,
 .overview-heading p,
-.hero-copy p,
 .nourish-summary p,
 .breathe-teaser p,
 .breathing-tips p,
@@ -3794,7 +3543,6 @@ a {
 .suggestion-panel small {
   font-size: var(--fs-caption1);
 }
-.hero-eyebrow,
 .breathe-teaser .eyebrow {
   font-size: var(--fs-caption2);
 }
@@ -3850,11 +3598,7 @@ a {
   .reminder-copy small {
     font-size: var(--fs-caption1);
   }
-  .hero-copy p {
-    font-size: var(--fs-footnote);
-  }
-  .hero-eyebrow,
-  .breathe-teaser .eyebrow {
+    .breathe-teaser .eyebrow {
     font-size: var(--fs-caption2);
   }
   .snapshot-heading .subtle-label {
@@ -4001,22 +3745,7 @@ a {
   }
 }
 @media (max-width: 520px) {
-  .hero-banner {
-    min-height: 0;
-    padding: 20px 22px;
-    margin-bottom: 22px;
-  }
-  .hero-art,
-  .hero-copy p {
-    display: none;
-  }
-  .hero-copy {
-    max-width: 100%;
-  }
-  .hero-copy h2 {
-    font-size: var(--fs-title1);
-  }
-  .journal-row .icon-tile {
+          .journal-row .icon-tile {
     display: none;
   }
 }
@@ -4163,7 +3892,6 @@ a {
 }
 @media (max-width: 760px) {
   /* The habit vine carries the brand on a phone; the illustrated banner only repeated "Start breathing". */
-  .hero-banner,
   .daily-note {
     display: none;
   }

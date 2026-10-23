@@ -259,7 +259,6 @@ export default function WellnessApp() {
           </span>
           wellnest<span className="brand-dot">.</span>
         </button>
-        <div className="sidebar-caption">YOUR DAILY WELLBEING</div>
         <nav>
           {navigation.map(({ page: p, label, icon: Icon }) => (
             <button
@@ -397,7 +396,6 @@ export default function WellnessApp() {
                 </div>
                 <Heart size={30} strokeWidth={1} />
               </div>
-              <span className="eyebrow">A LITTLE BETTER, EVERY DAY</span>
               <h1>
                 Make room
                 <br />

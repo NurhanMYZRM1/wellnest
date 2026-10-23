@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Wellnest — A little better, every day",
+  title: "Wellnest",
   description:
     "Your daily space for better sleep, mindful moments, movement, and everyday wellbeing.",
   icons: { icon: "/icon.svg" },

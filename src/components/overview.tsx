@@ -186,36 +186,6 @@ export function Overview(
           ))}
         </div>
       </section>
-      <section className="hero-banner">
-        <div className="hero-copy">
-          <span className="hero-eyebrow">
-            <Sparkles size={13} />A LITTLE CARE GOES A LONG WAY
-          </span>
-          <h2>
-            Good habits.
-            <br />
-            <em>Better days.</em>
-          </h2>
-          <p>
-            You don’t have to do it all. Just take
-            <br className="desktop-break" /> one small step for yourself today.
-          </p>
-          <button onClick={() => navigate("breathe")} className="hero-button">
-            Take a mindful moment
-            <ArrowRight size={17} />
-          </button>
-        </div>
-        <div className="hero-art" aria-hidden="true">
-          <div className="art-ring ring-one" />
-          <div className="art-ring ring-two" />
-          <div className="art-sun" />
-          <div className="leaf-shape leaf-one" />
-          <div className="leaf-shape leaf-two" />
-          <div className="leaf-shape leaf-three" />
-          <div className="leaf-shape leaf-four" />
-          <div className="plant-stem" />
-        </div>
-      </section>
       <div className="section-title snapshot-heading">
         <h2>Your daily snapshot</h2>
         <span className="subtle-label">Small steps, all in one place</span>
@@ -340,7 +310,6 @@ export function Overview(
         </section>
         <section className="breathe-teaser">
           <div className="breathe-teaser-top">
-            <span className="eyebrow">PAUSE. BREATHE. RESET.</span>
             <Flower2 size={21} strokeWidth={1.3} />
           </div>
           <h2>
