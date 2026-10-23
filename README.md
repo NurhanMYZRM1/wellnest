@@ -1,9 +1,8 @@
 # Wellnest
 
-A mobile-first personal wellness prototype for a hackathon.
+A mobile-first personal wellness prototype for a hackathon. Built with Next.js App Router, React, TypeScript, Tailwind CSS, and local browser storage. No sign-in, API keys, or database setup is needed.
 
 **Live demo:** https://wellnest-azure.vercel.app (open on a phone, then tap **Explore demo**)
- Built with Next.js App Router, React, TypeScript, Tailwind CSS, and local browser storage. No sign-in, API keys, or database setup is needed.
 
 ## Run locally
 
